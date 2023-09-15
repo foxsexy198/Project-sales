@@ -1,0 +1,79 @@
+.contact {
+  margin: 100px 10% 0 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contact div {
+  margin: 0 10px;
+}
+.contact .contact_1 {
+  width: 50%;
+}
+
+.contact .contact_1 .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 0 10px;
+}
+.contact .contact_1 .address p {
+  margin-top: 10px;
+}
+.contact .contact_1 .address i {
+  margin: 0 5px 0 5px;
+  color: red;
+}
+
+.contact .contact_1 .branch {
+  margin-left: 0;
+}
+.contact .contact_1 .branch .hanoi_branch {
+  margin: 5px 0 10px 20px;
+}
+.contact .contact_1 .branch .hcm_branch {
+  margin-left: 20px;
+}
+.hanoi_branch li,
+.hcm_branch li {
+  margin-left: 10px;
+  list-style-type: circle;
+}
+
+.contact .form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact .form input {
+  margin-top: 10px;
+  font-size: 16px;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid rgb(155, 147, 147);
+}
+.form textarea {
+  margin-top: 10px;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-left: 10px;
+  border: 1px solid rgb(155, 147, 147);
+}
+.form button {
+  margin-top: 10px;
+  width: 10%;
+  height: 40px;
+  background-color: #df8767;
+  border: 1px solid rgb(118, 112, 112);
+  border-radius: 5px;
+}
+.contact .contact_2 {
+  width: 50%;
+}
+.contact .contact_2 iframe {
+  width: 100%;
+}
+
+.form button:hover {
+  background-color: var(--color_one);
+}

@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(255, 239, 229);
+  scroll-behavior: smooth;
+}
+
+/* --------------------main------------------- */
+
+.main {
+  width: 80%;
+  margin: 48px auto;
+}
+
+.main-dm__product {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.main-dm__title--primary {
+  color: #353535;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.main-dm__list {
+  display: flex;
+}
+
+.main-dm__link {
+  text-decoration: none;
+  margin: 12px 0;
+  width: 18%;
+  border-right: 1px solid brown;
+  text-align: center;
+  padding: 0 8px;
+  text-decoration: none;
+  color: #535353;
+}
+
+.main-dm__photo {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.main-dm__name {
+  width: 100%;
+  color: #535353;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+.main-dm__link:hover .main-dm__photo {
+  transform: scale(1.1);
+}
+
+.main-dm__link:hover .main-dm__name {
+  color: rgb(255, 148, 109);
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.section__title {
+  color: #353535;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.section__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 20%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 220px;
+  margin-bottom: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item:hover {
+  border: 1px solid rgb(255, 119, 34);
+  cursor: pointer;
+}
+
+.item__photo {
+  display: block;
+  width: 100%;
+  padding: 4px;
+}
+
+.item__info {
+  width: 90%;
+  height: 100px;
+  margin: 8px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item__name {
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.item__price {
+  color: #ff4747;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.item__btn--addcart {
+  border: none;
+  background-color: coral;
+  padding: 12px 24px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 80%;
+}
+
+.item__btn--addcart:hover {
+  background-color: rgb(219, 107, 66);
+  cursor: pointer;
+  color: #fff;
+}
+
+/* --------------------cart--------------------- */
+
+.main__showcart {
+  margin: 20px 0px 200px 0px;
+}
+.container {
+  margin: 10px auto;
+  width: 90%;
+}
+
+.main__showcart h1 {
+  color: #e54910;
+}
+
+.main__showcart .list-items {
+  /*list-items*/
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.main__showcart .list-head th {
+  /* list-head*/
+  background-color: rgb(255, 178, 150);
+  border: 1px solid black;
+  padding: 10px 3px;
+}
+
+.main__showcart :is(.list-foot, .list-body) :is(td, th) {
+  /* list-foot, list-body*/
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.main__showcart .list-body tr:nth-child(even) {
+  background-color: rgb(255, 202, 169);
+}
+
+.main__showcart .list-body tr td:not(:nth-child(3)) {
+  text-align: center;
+}
+
+.main__showcart .list-foot tr td {
+  background-color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.main__showcart .list-foot tr td:first-child {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.main__showcart .list-foot tr:first-child td:last-child {
+  background: url("../images/sanpham/thanks.jfif") center center border-box no-repeat;
+  background-size: contain;
+}
+
+.main__showcart .btn-order {
+  position: relative;
+}
+
+.main__showcart .btn-order button {
+  border: none;
+  padding: 16px 28px;
+  color: #fff;
+  font-size: 1rem;
+  background-color: #e54910;
+  border-radius: 4px;
+  text-align: center;
+  position: absolute;
+  right: 5%;
+  top: 0;
+}
+
+.main__showcart .btn-order:hover button {
+  cursor: pointer;
+  background-color: #ca3a06;
+}

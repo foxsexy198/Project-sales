@@ -1,0 +1,49 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header a, .header span, .search-main input {
+    color: var(--color_three);
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI";
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.header button {
+    color: var(--color_four);
+}
+
+
+
+:root{
+    --color_zero: #F0A65E;
+    --color_one: #FF4E00;
+    --color_two: #F69562;
+    --color_three: #fff;
+    --color_four: #FBE4D8;
+    --color_five: #854F6C;
+    --color_six: #522B5B;
+    --color_seven: #2B124C;
+    --color_eight: #190019;
+    --color_nine: #26425A;
+    --color_ten: #072E33;
+    --color_eleven: #0C7075;
+    --color_twelve: #0F969C;
+    --color_thirteen: #294D61;
+    --color_fourteen: #F1916D;
+    --color_fifteen: #1B3358;
+    --color_sixteen: #473E66;
+    --font_one: monospace;
+}
+

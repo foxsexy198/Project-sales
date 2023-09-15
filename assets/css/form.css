@@ -1,0 +1,175 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.form-container.open {
+  display: flex;
+  z-index: 10;
+}
+
+.form-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background-size: 100% 100%;
+  opacity: 0.4;
+}
+
+.form__wrapper {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+}
+
+.form__title {
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+}
+
+.form-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px 16px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.form-close:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.form__label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.form__input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.form__policy {
+  margin: 15px 0 0 0;
+  text-align: center;
+}
+
+.form__submit-btn {
+  width: 100%;
+  margin: 15px 0 5px 0;
+  padding: 10px;
+  background: #f0a65e;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form__submit-btn:hover {
+  background: #da8e43;
+}
+
+.form__remember {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__link {
+  text-decoration: none;
+  color: #c23321;
+}
+
+.form__socials {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.form__socials a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form__socials a i {
+  margin-right: 5px;
+}
+
+.form__socials--fb {
+  background: #5777bc;
+}
+
+.form__socials--fb:hover {
+  background: #3c558a;
+}
+
+.form__socials--gg {
+  background: #f65f4b;
+}
+
+.form__socials--gg:hover {
+  background: #d8422f;
+}
+
+.form__goto {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form__input-container {
+  position: relative;
+}
+
+#name-valid,
+#psw-valid,
+#psw-match {
+  position: absolute;
+  top: 15%;
+  right: 2%;
+}
+
+.form__password--visionDN,
+.form__password--vision {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 24%;
+  right: 2%;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.visible {
+  opacity: 1;
+}
